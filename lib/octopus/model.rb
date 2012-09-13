@@ -87,6 +87,7 @@ module Octopus::Model
     include SharedMethods
 
     def should_set_current_shard?
+      return false
       self.respond_to?(:current_shard) && !self.current_shard.nil?
     end
 
