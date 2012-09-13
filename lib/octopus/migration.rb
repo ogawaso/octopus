@@ -88,8 +88,8 @@ module Octopus::Migration
   end
 end
 
-if Octopus.rails31?
-  ActiveRecord::Migration.send(:include, Octopus::Migration)
-else
-  ActiveRecord::Migration.extend(Octopus::Migration)
-end
+#if Octopus.rails31?
+#  ActiveRecord::Migration.send(:include, Octopus::Migration)
+#else
+#  ActiveRecord::Migration.extend(Octopus::Migration)
+#end
